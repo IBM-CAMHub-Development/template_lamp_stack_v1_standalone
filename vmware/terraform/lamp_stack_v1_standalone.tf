@@ -442,7 +442,7 @@ variable "LAMPNode01_root_disk_size" {
 }
 
 module "provision_proxy" {
-  source 						= "git::https://github.com/IBM-CAMHub-Open/terraform-modules.git?ref=1.0//vmware/proxy"
+  source 						= "git::https://github.com/IBM-CAMHub-Development/terraform-modules.git?ref=1.0//vmware/proxy"
   ip                  = "${var.LAMPNode01_ipv4_address}"
   id									= "${vsphere_virtual_machine.LAMPNode01.id}"
   ssh_user            = "${var.LAMPNode01-os_admin_user}"
